@@ -1,5 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
+import { PlanCard } from '../components/PlanCard';
+import { planGradients } from '../constants/theme';
 
 const PLANS = [
   {
