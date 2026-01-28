@@ -28,6 +28,10 @@ const PLANS = [
 ] as const;
 
 export function ChoosePlanScreen() {
+  const handleSelectPlan = (planId: string) => {
+    // プラン選択時の処理をここに実装
+  }
+
   return (
     <LinearGradient colors={['#0a0a0a', '#141414', '#1a1a1a']} style={styles.container}>
       {/* ヘッダー */}
@@ -48,6 +52,7 @@ export function ChoosePlanScreen() {
             title={plan.title}
             description={plan.description}
             gradientColors={plan.gradient as [string, string]}
+            onPress={() => handleSelectPlan(plan.id)}
           />
         ))}
       </View>
